@@ -1,0 +1,16 @@
+var request = require("request");
+
+var options = { method: 'GET',
+  url: 'http://127.0.0.1:8000/api/user',
+  headers: 
+   { 'postman-token': '5e364f28-7060-f183-07fe-f94858498e7a',
+     'cache-control': 'no-cache',
+     authorization: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImUzNzg4MzZkZDQzMDFiNTExMjZlZWNkYzhiYmMxZmY0MjAyNzc4NTFlNGRlNTcyYTkwZjMyZTgzNzAxYjZkNDhhNzhjNWFiOTk3NDM5YTY0In0.eyJhdWQiOiI0IiwianRpIjoiZTM3ODgzNmRkNDMwMWI1MTEyNmVlY2RjOGJiYzFmZjQyMDI3Nzg1MWU0ZGU1NzJhOTBmMzJlODM3MDFiNmQ0OGE3OGM1YWI5OTc0MzlhNjQiLCJpYXQiOjE1NTkyMDk4NTQsIm5iZiI6MTU1OTIwOTg1NCwiZXhwIjoxNTYwNTA1ODU0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ok2mGWzNHTjHRSYSK2fqAO3S2Vy9WJ7iortc-qn40skmqehR5oQ42KXRBj9s2UEiGMxrOzImAI6aGF9O4WsQNPPnkVz6_XxAUTKcn9jD1NutFd7JiJRdiYx2cHUMWoYTzoAJkaMmhUFYHqQu9-mgsPzU59KLx5hbRK3db7SaADOTf3m0MGv9eVexLZBm0YKYfZxiXEmCq1CgVEEsfQypDQwAeJmf9bY2DBR6K-GTvT8yALFwEQaL3l99DtodTJtM0A4Asuy5o4-Bfcf9o6NOLRKe0HBp1RY56J0WmhYoXb-pXTJf4Vtz78y-Kjm-zKnAiVgZK0lXjwwWZBKFBECw4fueUueHLvoEolQD1Qm3jgLBCKeyEhum0mbr4ylw_GsIJyPn8nyP_bm3gogjG_jmsEd2llrczmB_hVytI5ZPRI1Eqc7g0pS8duzuyddjIo7v1_XuVZF4TJhE6r-OKSzfQCRAEj-vQlpe-i2C1ujfqwq5Fxb525EUanN5yrKz2yLAQwy90q4bdt4sDO-cA0-tlfXFejiEinCu8lQDCGtXc-9FdAFYVsfuK7A5sOORqPw1jN-uOcGrscbA4bFC2NDQrsh9gb97-7iQ1eIXgBdvz6MN3TjKR7n1l3wjzcmA_zsBpXI5CuPu4AOk-UQ97-a7U92ntx7C2YMi7l0FWWGl1pg',
+     accept: 'application/json' },
+  form: { email: 'dagogodboss@gmail.com', password: '1234Dagogo%' } };
+
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
+
+  console.log(body);
+});
