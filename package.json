@@ -53,7 +53,7 @@
     "ree-validate": "^3.0.2",
     "route-changed": "^1.0.2",
     "store": "^2.0.12",
-    "validator": "^9.4.1",
+    "validator": "^13.7.0",
     "victory": "^0.26.1"
   }
 }
